@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtXHM7GOuoglj0_Vp5DhiisIh1G6Y2kkdHp1iWSGh3cy0htdg91BptrzyV&s=10" />
+  <title>Gymshark</title>
+</head>
+
+<body>
+  <header class="header-flex">
+    <div class="logo-contenedor">
+      <img class="logo-web"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtXHM7GOuoglj0_Vp5DhiisIh1G6Y2kkdHp1iWSGh3cy0htdg91BptrzyV&s=10" />
+    </div>
+
+    <div class="barra-busqueda">
+      <input placeholder="Buscar productos..." type="search" class="input" />
+    </div>
+  </header>
+
+  <main></main>
+
+  <footer class="seccion-formulario">
+    <form class="formulario">
+      <fieldset>
+        <legend>Ayúdanos a mejorar</legend>
+
+        <label for="nombre">¿Cuál es tu nombre?</label>
+        <input type="text" id="nombre" class="campo-texto" placeholder="Tu nombre..." />
+
+        <label for="opinion">¿Qué te ha parecido la página web?</label>
+        <textarea id="opinion" class="campo-texto" rows="3" placeholder="Tu opinión..."></textarea>
+
+        <p class="pregunta-check">¿Asistes habitualmente al gym?</p>
+        <div class="grupo-checks">
+          <label><input class="input-selecion" type="radio" name="gym" value="no" />
+            No</label>
+          <label><input class="input-selecion" type="radio" name="gym" value="si" />
+            Sí</label>
+        </div>
+        <div class="btn-formulario">
+          <button class="boton-interactivo" type="button">Enviar</button>
+          <button class="boton-borrar-interactivo" type="button"> Borrar </button>
+        </div>
+      </fieldset>
+    </form>
+  </footer>
+
+  <div id="contenedor-datos"></div>
+  <script src="./src/index.js"></script>
+</body>
+
+</html>
