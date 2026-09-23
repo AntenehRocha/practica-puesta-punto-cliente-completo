@@ -7,11 +7,13 @@ $(document).ready(function () {
     console.log(comentarioSobrePagina);
     console.log(vaAlgym);
 
-    $("#contenedor-datos").append(` 
-      <h1> Muchas gracias por tu colaboracion ${nombre} </h1>
+    $(".seccion-formulario").append(` 
+      <div id="contenedor-datos">
+        <h1> Muchas gracias por tu colaboracion ${nombre} </h1>
         <p> Nombre: ${nombre} </p>
         <p> Opinion: ${comentarioSobrePagina} </p>
         <p> Asistencia al gimnasio: ${vaAlgym} </p>
+      </div>
     `);
   });
 
