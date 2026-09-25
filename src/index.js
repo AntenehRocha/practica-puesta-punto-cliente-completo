@@ -9,10 +9,7 @@ $(document).ready(function () {
 
     $(".seccion-formulario").append(` 
       <div id="contenedor-datos">
-        <h1> Muchas gracias por tu colaboracion ${nombre} </h1>
-        <p> Nombre: ${nombre} </p>
-        <p> Opinion: ${comentarioSobrePagina} </p>
-        <p> Asistencia al gimnasio: ${vaAlgym} </p>
+        <h4> Muchas gracias ${nombre} </h4>
       </div>
     `);
   });
