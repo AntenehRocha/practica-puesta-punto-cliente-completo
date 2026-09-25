@@ -251,7 +251,21 @@ a {
     gap: 20px;
   }
 
+  .precio {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 60px;
+  width: 20%;
+  text-align: center;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  margin: 0;
 }
+}
+
+
 
 @media screen and (max-width: 767px) {
   .seccion-formulario {
@@ -266,4 +280,17 @@ a {
     flex-direction: column;
     gap: 20px;
   }
+
+  .precio {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 60px;
+  width: 20%;
+  text-align: center;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  margin: 0;
+}
 }
