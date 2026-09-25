@@ -237,7 +237,7 @@ a {
   font-style: bold;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 480px) {
   .seccion-formulario {
     display: flex;
     justify-content: center;
@@ -251,4 +251,19 @@ a {
     gap: 20px;
   }
 
+}
+
+@media screen and (max-width: 767px) {
+  .seccion-formulario {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+  }
+
+
+  .imagenes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
