@@ -220,7 +220,7 @@ a {
   height: 30%;
   background: linear-gradient(to bottom, transparent, white);
   pointer-events: none;
-  border-bottom-left-radius: 60px;  
+  border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
 }
 
@@ -237,10 +237,18 @@ a {
   font-style: bold;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
   .seccion-formulario {
     display: flex;
     justify-content: center;
     margin: 40px 0;
   }
+
+
+  .imagenes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
 }
