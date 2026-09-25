@@ -1,20 +1,8 @@
-$(document).ready(function () {
-  let evento = $(".boton-interactivo").click(function () {
-    let nombre = $("#nombre").val();
-    let comentarioSobrePagina = $("#opinion").val();
-    let vaAlgym = $(".input-selecion:checked").val();
-    console.log(nombre);
-    console.log(comentarioSobrePagina);
-    console.log(vaAlgym);
+import readline from "node:readline/promises";
 
-    $(".seccion-formulario").append(` 
-      <div id="contenedor-datos">
-        <h4> Muchas gracias ${nombre} </h4>
-      </div>
-    `);
-  });
-
-  $(".boton-borrar-interactivo").click(function () {
-    $("#contenedor-datos").remove();
-  });
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
 });
+
+
