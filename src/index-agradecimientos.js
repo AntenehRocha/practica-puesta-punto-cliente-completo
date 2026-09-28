@@ -1,36 +1,24 @@
-function obtenerUltimoUsuario() {
-  try {
-    const datos = localStorage.getItem("datosUsuarios");
-    const listaUsuarios = datos ? JSON.parse(datos) : [];
-    if (listaUsuarios.length > 0) {
-      return listaUsuarios[listaUsuarios.length - 1];
-    }
-    return null;
-  } catch (error) {
-    console.error("Error al leer los datos", error);
-    return null;
-  }
-}
-
 function mostrarDatos() {
-  const usuario = obtenerUltimoUsuario();
+    const parametros = new URLSearchParams(window.location.search);
 
-  if (!usuario) {
-    console.log("No hay datos de usuarios registrados.");
-    return;
-  }
+    const nombre = parametros.get("nombre");
+    const opinion = parametros.get("opinion");
+    const gym = parametros.get("gym");
+    const fecha = parametros.get("fecha");
 
-  const contenedor = document.getElementById("datos-contenedor");
-  if (contenedor) {
-    contenedor.innerHTML = `
+    if (!nombre) return;
+
+    const contenedor = document.getElementById("datos-contenedor");
+    if (contenedor) {
+        contenedor.innerHTML = `
       <div class="tarjeta-datos">
-        <p><strong>Nombre:</strong> ${usuario.nombre}</p>
-        <p><strong>Opinión:</strong> ${usuario.opinion}</p>
-        <p><strong>¿Asiste al Gym?:</strong> ${usuario.asisteAlGym}</p>
-        <p><strong>Fecha de envío:</strong> ${usuario.fechaEnvio}</p>
+        <p><strong>Nombre:</strong> ${nombre}</p>
+        <p><strong>Opinión:</strong> ${opinion}</p>
+        <p><strong>¿Asiste al Gym?:</strong> ${gym}</p>
+        <p><strong>Fecha de envío:</strong> ${fecha}</p>
       </div>
     `;
-  }
+    }
 }
 
 document.addEventListener("DOMContentLoaded", mostrarDatos);
