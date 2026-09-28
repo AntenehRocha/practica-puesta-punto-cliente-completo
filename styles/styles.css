@@ -311,6 +311,19 @@ a {
   color: white;
 }
 
+.h1-gracias {
+  text-align: center;
+  color: red;
+}
+
+#datos-contenedor {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+
+}
+
 @media screen and (max-width: 480px) {
   .seccion-formulario {
     display: flex;
