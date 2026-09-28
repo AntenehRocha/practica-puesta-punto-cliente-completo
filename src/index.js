@@ -1,18 +1,19 @@
 const formulario = document.getElementsByClassName("formulario")[0];
 
-formulario.addEventListener("submit", function (event) {
-  event.preventDefault();
+formulario.addEventListener("submit", (evento) => {
+  evento.preventDefault();
 
   const nombre = document.getElementById("nombre").value;
   const opinion = document.getElementById("opinion").value;
-  const gymRadio = document.querySelector('input[name="gym"]:checked');
 
-  let asisteGym = gymRadio ? gymRadio.value : "no especificado";
+  const radioAsiste = document.querySelector('input[name="grupo-checks"]:checked');
+  let asisteGym = radioAsiste;
 
-  window.location.href = `./paginas/agradecimientos.html?nombre=${encodeURIComponent(nombre)}&opinion=${encodeURIComponent(opinion)}&gym=${encodeURIComponent(asisteGym)}}`;
-});
+  const datosUsuario = { nombre, opinion, asisteGym };
 
-const botonBorrar = document.getElementsByClassName("boton-borrar-interactivo")[0];
-botonBorrar.addEventListener("click", () => {
-  formulario.reset();
+  localStorage.setItem("datosFormulario", JSON.stringify(datosUsuario));
+
+  console.log("datos recogidos", datosUsuario);
+
+  window.location.href = "../paginas/agradecimientos.html";
 });
