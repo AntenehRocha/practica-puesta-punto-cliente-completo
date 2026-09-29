@@ -318,10 +318,21 @@ a {
 
 #datos-contenedor {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   gap: 10px;
+}
 
+.datosUsuario {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+
+}
+
+.resumen-datos {
+  text-align: start;
 }
 
 @media screen and (max-width: 480px) {
@@ -355,7 +366,6 @@ a {
     flex-direction: column;
     gap: 20px;
   }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -389,5 +399,4 @@ a {
     flex-direction: column;
     gap: 20px;
   }
-
 }
