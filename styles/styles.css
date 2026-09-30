@@ -6,9 +6,13 @@ body {
 
 .header-flex {
   display: flex;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
-  margin: 20px;
+  padding-top: 10px;
   margin-bottom: 5%;
 }
 
@@ -328,7 +332,6 @@ a {
   display: flex;
   flex-direction: column;
   text-align: start;
-
 }
 
 .resumen-datos {
