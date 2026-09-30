@@ -6,8 +6,22 @@ formulario.addEventListener("submit", (evento) => {
   const nombre = document.getElementById("nombre").value;
   const opinion = document.getElementById("opinion").value;
 
-  const radioAsiste = document.querySelector('input[name="grupo-checks"]:checked');
-  let asisteGym = radioAsiste;
+  const radioAsiste = document.querySelector(
+    'input[name="grupo-checks"]:checked',
+  );
+  let asisteGym;
+
+  if (radioAsiste) {
+    if (radioAsiste.value === "Sí") {
+      asisteGym = "Asiste al gym";
+    } else if (radioAsiste.value === "No") {
+      asisteGym = "No asiste al gym";
+    } else {
+      asisteGym = radioAsiste.value;
+    }
+  } else {
+    asisteGym = "no has respondido a la pregunta";
+  }
 
   const datosUsuario = { nombre, opinion, asisteGym };
 
