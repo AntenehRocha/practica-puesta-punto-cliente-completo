@@ -134,7 +134,13 @@
             alt=""
             class=""
           />
-          <a href="https://buy.stripe.com/test_3cI4gy7rkcdO5gV8Ej0co00" class=""> Comprar </a>
+          <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+          <stripe-buy-button
+            buy-button-id="buy_btn_1ULXSXD2RA7jyxftAvRWvxwb"
+            publishable-key="pk_test_51UL9IfD2RA7jyxftbbHiUbde4pVSz510d93eYEeyP6S9JiW8FZU0aYrlNOvbubKRICQ9vhUs2bXprorgWFVyyoea00jmN5asfX"
+          >
+          </stripe-buy-button>
         </div>
       </section>
     </main>

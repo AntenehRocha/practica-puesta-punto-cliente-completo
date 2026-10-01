@@ -386,6 +386,23 @@ a {
     flex-direction: column;
     gap: 20px;
   }
+
+  .grid-gyms {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+  }
+
+  .grid-gyms img {
+    height: 30vh;
+  }
+
+  .main2 {
+    text-align: center;
+    padding: 3%;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -419,4 +436,22 @@ a {
     flex-direction: column;
     gap: 20px;
   }
+
+  .grid-gyms {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+  }
+
+  .grid-gyms img {
+    height: 30vh;
+
+  }
+
+  .main2 {
+    text-align: center;
+    padding: 3%;
+  }
+
 }
